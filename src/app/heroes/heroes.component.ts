@@ -17,6 +17,11 @@ h: Hero = {
 
 hs = HEROES;
 
+selectedHero: Hero;
+onSelect(h: Hero): void {
+  this.selectedHero = h;
+}
+
   constructor() { }
 
   ngOnInit() {
