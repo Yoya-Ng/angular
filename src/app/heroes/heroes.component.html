@@ -15,10 +15,10 @@ hero類型＝{{h}}
 <h2>My Heroes</h2>
 heroes類型＝{{hs}}
 <ul class="heroes">
-  <li *ngFor="let H of hs" 
-      [class.selected]="H === selectedHero"
-      (click)="onSelect(H)">
-    <span class="badge">{{H.id}}</span> {{H.name}}
+  <li *ngFor="let H of hs">
+    <a routerLink="/detail/{{H.id}}">
+      <span class="badge">{{H.id}}</span> {{H.name}}
+    </a>
   </li>
 </ul>
 
