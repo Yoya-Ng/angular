@@ -32,7 +32,7 @@ getHeroes(): void {
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
-    
+    this.getHeroes();
   }
 
 }
