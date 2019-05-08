@@ -10,3 +10,12 @@ hero類型＝{{h}}
     <input [(ngModel)]="h.name" placeholder="name">
   </label>
 </div>
+
+
+<h2>My Heroes</h2>
+heroes類型＝{{hs}}
+<ul class="heroes">
+  <li *ngFor="let H of hs">
+    <span class="badge">{{H.id}}</span> {{H.name}}
+  </li>
+</ul>
