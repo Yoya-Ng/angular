@@ -16,6 +16,7 @@ hero類型＝{{h}}
 heroes類型＝{{hs}}
 <ul class="heroes">
   <li *ngFor="let H of hs" 
+      [class.selected]="H === selectedHero"
       (click)="onSelect(H)">
     <span class="badge">{{H.id}}</span> {{H.name}}
   </li>
