@@ -26,7 +26,8 @@ onSelect(h: Hero): void {
 }
 
 getHeroes(): void {
-  this.hs = this.heroService.getHeroes();
+  this.heroService.getHeroes()
+      .subscribe(heroes => this.hs = heroes);
 }
 
   constructor(private heroService: HeroService) { }
