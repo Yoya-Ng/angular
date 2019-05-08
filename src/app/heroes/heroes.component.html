@@ -3,3 +3,10 @@ hero類型＝{{h}}
 <h2>{{h.name | uppercase}}</h2>
 <div><span>id:</span>{{h.id}}</div>
 <div><span>name:</span>{{h.name}}</div>
+
+<!-- 雙向綁定 -->
+<div>
+  <label>name:
+    <input [(ngModel)]="h.name" placeholder="name">
+  </label>
+</div>
