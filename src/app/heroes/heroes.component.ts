@@ -20,10 +20,11 @@ h: Hero = {
 // hs = HEROES;
 hs: Hero[];
 
-selectedHero: Hero;
-onSelect(h: Hero): void {
-  this.selectedHero = h;
-}
+// selectedHero: Hero;
+
+// onSelect(h: Hero): void {
+//   this.selectedHero = h;
+// }
 
 getHeroes(): void {
   this.heroService.getHeroes()
